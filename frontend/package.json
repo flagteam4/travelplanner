@@ -3,9 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^3.9.0",
+    "@material-ui/icons": "^3.0.2",
+    "cross-fetch": "^3.0.0",
+    "prop-types": "^15.6.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.0"
+    "react-google-maps": "^9.4.5",
+    "react-redux": "^6.0.0",
+    "react-scripts": "3.0.0",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "recompose": "^0.30.0",
+    "@google/maps": "^0.5.5"
+  },
+  "devDependencies": {
+    "redux-devtools-extension": "^2.13.8"
   },
   "scripts": {
     "start": "react-scripts start",
