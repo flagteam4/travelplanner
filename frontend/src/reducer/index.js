@@ -1,3 +1,4 @@
 import {combineReducers} from "redux";
+import {locationReducer} from "./locationReducer";
 
-export default combineReducers({})
+export default combineReducers({locationReducer})
