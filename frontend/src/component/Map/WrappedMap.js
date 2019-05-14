@@ -1,22 +1,31 @@
 import {compose, withProps} from "recompose";
-import {GoogleMap, withGoogleMap, withScriptjs} from "react-google-maps";
+import {GoogleMap, withGoogleMap} from "react-google-maps";
 import React from "react";
-import MyDirectionRender from "./MyDirectionRender";
+import * as PropTypes from "prop-types";
+import {connect} from "react-redux";
+
+const mapStateToProps = (state) => ({
+    center: state.locationReducer.center
+});
 
 export const WrappedMap = compose(
     withProps({
-        googleMapURL: `https://maps.googleapis.com/maps/api/js?v=3.exp&key=${process.env.REACT_APP_GOOGLE_API_KEY}&libraries=geometry,drawing,places`,
-        loadingElement: <div style={{height: `100%`}}/>,
-        containerElement: <div style={{height: `100vh`}}/>,
+        containerElement: <div style={{height: `100%`}}/>,
         mapElement: <div style={{height: `100%`}}/>,
     }),
-    withScriptjs,
-    withGoogleMap
-)(() =>
+    withGoogleMap,
+    connect(mapStateToProps, null)
+)(props =>
     <GoogleMap
-        defaultZoom={12}
-        defaultCenter={{lat: 34.0522, lng: -118.2437}}
+        defaultZoom={props.zoom}
+        center={props.center}
     >
-        <MyDirectionRender/>
+        {props.children}
     </GoogleMap>
 );
+
+WrappedMap.propTypes = {
+    zoom: PropTypes.number.isRequired,
+    center: PropTypes.object,
+};
+

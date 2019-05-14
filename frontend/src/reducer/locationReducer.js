@@ -1,32 +1,60 @@
-import {MOVE_LOCATION, TOGGLE_LOCATION} from "../action/locationAction";
+import {MOVE_LOCATION, TOGGLE_LOCATION, UPDATE_CENTER, UPDATE_LOCATIONS} from "../action/locationAction";
 import arrayMove from 'array-move';
 
 export const locationReducer = (state = {
-    locations: [
-        {title: 'Los Angeles', status: false, lat: 34.0522, lng: -118.2437},
-        {title: 'Santa Monica', status: false, lat: 34.0093515, lng: -118.49746820000001},
-        {title: 'Hollywood', status: false, lat: 34.0928, lng: -118.3287}
-    ],
+    center: {lat: 34.0522, lng: -118.2437},
+    locations: [],
     chosenLocations: []
 }, action) => {
     switch (action.type) {
         case TOGGLE_LOCATION:
             const locations = state.locations.map(location => {
                 if (location.title === action.title)
-                    return {...location, status: !location.status};
+                    return {...location, chosen: !location.chosen};
                 else return location;
             });
             return {
                 ...state,
                 locations,
-                chosenLocations: locations.filter(location => location.status)
+                chosenLocations: locations.filter(location => location.chosen)
             };
         case MOVE_LOCATION:
             return {
                 ...state,
                 chosenLocations: arrayMove(state.chosenLocations, action.oldIndex, action.newIndex)
             };
+        case UPDATE_CENTER:
+            return {
+                ...state,
+                center: action.center
+            };
+        case UPDATE_LOCATIONS:
+            return {
+                ...state,
+                locations: removeDup(action.locations).map(location=>({
+                    title: location.name,
+                    chosen: false,
+                    lat: location.location.lat,
+                    lng: location.location.lng,
+                    formatted_address: location.formatted_address,
+                    photos: decodeURIComponent(location.photos),
+                    rating: location.rating,
+                    place_id: location.place_id
+                }))
+            };
         default:
             return state;
     }
 };
+
+function removeDup(locations) {
+    let set = new Set();
+    return locations.filter(location => {
+        if (set.has(location.place_id))
+            return false;
+        else {
+            set.add(location.place_id);
+            return true;
+        }
+    })
+}

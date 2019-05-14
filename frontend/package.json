@@ -17,7 +17,8 @@
     "recompose": "^0.30.0",
     "@google/maps": "^0.5.5",
     "react-sortable-hoc": "^1.9.1",
-    "array-move": "^2.1.0"
+    "array-move": "^2.1.0",
+    "react-star-ratings": "2.3.0"
   },
   "devDependencies": {
     "redux-devtools-extension": "^2.13.8"
