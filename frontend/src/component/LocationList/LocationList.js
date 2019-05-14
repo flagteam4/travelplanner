@@ -4,7 +4,6 @@ import List from "@material-ui/core/List";
 import LocationItem from "./LocationItem";
 import {connect} from "react-redux";
 import {withStyles} from "@material-ui/core";
-import {updateLocations} from "../../action/locationAction";
 
 const locationItemStyle = {
     selected: {
@@ -16,11 +15,6 @@ const locationItemStyle = {
 const StyledLocationItem = withStyles(locationItemStyle)(LocationItem);
 
 class LocationList extends React.Component {
-    constructor(props) {
-        super(props);
-        this.props.updateLocations();
-    }
-
     render() {
         let count = 0;
         return (
@@ -35,16 +29,11 @@ class LocationList extends React.Component {
 
 LocationList.propTypes = {
     locations: PropTypes.arrayOf(PropTypes.object),
-    updateLocations: PropTypes.func
 };
 
 const mapStateToProps = (state) => ({
     locations: state.locationReducer.locations
 });
 
-const mapDispatchToProps = dispatch => ({
-    updateLocations: () => dispatch(updateLocations())
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(
+export default connect(mapStateToProps, null)(
     LocationList);

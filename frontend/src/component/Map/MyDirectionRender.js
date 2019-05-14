@@ -11,6 +11,7 @@ class MyDirectionRender extends React.Component {
         this.state = {
             directions: null
         }
+        this.updateDirections(this.props.locations);
     }
 
     mapObjToGoogleLocation(obj) {
@@ -19,6 +20,10 @@ class MyDirectionRender extends React.Component {
 
     componentWillReceiveProps(nextProps, nextContext) {
         const {locations} = nextProps;
+        this.updateDirections(locations);
+    }
+
+    updateDirections = (locations)=>{
         if (locations.length < 2) {
             this.setState({
                 directions: null
@@ -48,7 +53,7 @@ class MyDirectionRender extends React.Component {
                 }
             });
         }
-    }
+    };
 
     render() {
         return (

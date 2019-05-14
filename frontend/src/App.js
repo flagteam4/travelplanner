@@ -3,7 +3,8 @@ import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
-import SearchTab from "./component/SearchTab/SearchTab";
+import SearchTab from "./component/Tabs/SearchTab";
+import TripPlannerTab from "./component/Tabs/TripPlannerTab";
 
 function TabContainer(props) {
     return (
@@ -35,7 +36,7 @@ class App extends React.Component {
                     </Tabs>
                 </AppBar>
                 {value === 0 && <TabContainer><SearchTab/></TabContainer>}
-                {value === 1 && <TabContainer>Item Two</TabContainer>}
+                {value === 1 && <TabContainer><TripPlannerTab/></TabContainer>}
                 {value === 2 && <TabContainer>Item Three</TabContainer>}
             </div>
         );

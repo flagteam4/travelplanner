@@ -5,10 +5,6 @@ import LocationItem from "./LocationItem";
 import List from "@material-ui/core/List";
 import {connect} from "react-redux";
 import {moveLocation} from "../../action/locationAction";
-import {ListItem, ListItemText} from "@material-ui/core";
-import ExpandLess from '@material-ui/icons/ExpandLess';
-import ExpandMore from '@material-ui/icons/ExpandMore';
-import Collapse from "@material-ui/core/Collapse";
 
 const SortableItem = SortableElement(({location}) => <LocationItem location={location}/>);
 SortableItem.propTypes = {
@@ -16,40 +12,30 @@ SortableItem.propTypes = {
 };
 
 const ListContainer = SortableContainer(({children}) =>
-    <List component='nav'>
+    <List
+        component='nav'
+        style={{
+            height: '90vh',
+            overflow: 'auto'
+        }}
+    >
         {children}
     </List>
 );
 
 class ChosenLocationList extends React.Component {
-    state = {
-        open: true
-    };
-
-    toggleList = () => {
-        this.setState(state => ({open: !state.open}))
-    };
-
     render() {
         let {locations, onSortEnd} = this.props;
         return (
-            <List component='nav'>
-                <ListItem button onClick={this.toggleList}>
-                    <ListItemText inset primary='Chosen Locations'/>
-                    {this.state.open ? <ExpandLess/> : <ExpandMore/>}
-                </ListItem>
-                <Collapse in={this.state.open} timeout='auto' unmountOnExit>
-                    <ListContainer onSortEnd={onSortEnd}>
-                        {locations.map((location, index) =>
-                            <SortableItem
-                                key={`city-${index}`}
-                                index={index}
-                                location={location}
-                            />
-                        )}
-                    </ListContainer>
-                </Collapse>
-            </List>
+            <ListContainer onSortEnd={onSortEnd}>
+                {locations.map((location, index) =>
+                    <SortableItem
+                        key={`city-${index}`}
+                        index={index}
+                        location={location}
+                    />
+                )}
+            </ListContainer>
         )
     }
 }
