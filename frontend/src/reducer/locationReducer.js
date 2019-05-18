@@ -2,7 +2,7 @@ import {MOVE_LOCATION, TOGGLE_LOCATION, UPDATE_CENTER, UPDATE_LOCATIONS} from ".
 import arrayMove from 'array-move';
 
 export const locationReducer = (state = {
-    center: {lat: 34.0522, lng: -118.2437},
+    center: {lat: 0, lng: 0},
     locations: [],
     chosenLocations: []
 }, action) => {

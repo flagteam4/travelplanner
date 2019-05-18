@@ -2,7 +2,7 @@
 import React from "react";
 import * as PropTypes from "prop-types";
 import StandaloneSearchBox from "react-google-maps/lib/components/places/StandaloneSearchBox";
-import {updateCenter, updateLocations} from "../../action/locationAction";
+import {updateCenter, updateLocationsByGeo, updateLocationsByPlaces} from "../../action/locationAction";
 import {connect} from "react-redux";
 import Paper from "@material-ui/core/Paper";
 import InputBase from "@material-ui/core/InputBase";
@@ -22,10 +22,19 @@ class MySearchBox extends React.Component {
     onPlacesChanged = () => {
         const places = this.searchbox.getPlaces();
         if (places.length > 0) {
+            console.log(places);
             const geometry = places[0].geometry;
             const newCenter = geometry.location.toJSON();
             this.props.updateCenter(newCenter);
-            this.props.updateLocations();
+            if (places[0].types.includes('political')){
+                this.props.updateLocationsByGeo(geometry);
+            } else {
+                let placeIds = [];
+                places.forEach(place=>{
+                    placeIds.push(place.place_id)
+                });
+                this.props.updateLocationsByPlaces(placeIds)
+            }
         }
     };
 
@@ -40,7 +49,7 @@ class MySearchBox extends React.Component {
                         style={{
                             width: '70%',
                             marginLeft: '10%'
-                        }                    }
+                        }}
                         placeholder="Search Google Maps"
                     />
                     <IconButton>
@@ -54,12 +63,14 @@ class MySearchBox extends React.Component {
 
 MySearchBox.propTypes = {
     updateCenter: PropTypes.func,
-    updateLocations: PropTypes.func
+    updateLocationsByGeo: PropTypes.func,
+    updateLocationsByPlaces: PropTypes.func
 };
 
 const mapDispatchToProps = (dispatch) => ({
     updateCenter: (center) => dispatch(updateCenter(center)),
-    updateLocations: () => dispatch(updateLocations())
+    updateLocationsByGeo: (location) => updateLocationsByGeo(location)(dispatch),
+    updateLocationsByPlaces: (places) => updateLocationsByPlaces(places)(dispatch)
 });
 
 export default connect(null, mapDispatchToProps)(MySearchBox);

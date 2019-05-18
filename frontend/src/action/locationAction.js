@@ -31,7 +31,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJbzYnQte8woARJaqqFVpKeNo",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJbzYnQte8woARJaqqFVpKeNo?generation=1557716355312370\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJbzYnQte8woARJaqqFVpKeNo?generation=1557845372533405\u0026alt=media",
         "rating": 4.8
     },
     {
@@ -47,7 +47,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJywjU6WG_woAR3NrWwrEH_3M",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJywjU6WG_woAR3NrWwrEH_3M?generation=1557716356581259\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJywjU6WG_woAR3NrWwrEH_3M?generation=1557845373927052\u0026alt=media",
         "rating": 4.7
     },
     {
@@ -63,7 +63,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJzzgyJU--woARcZqceSdQ3dM",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJzzgyJU--woARcZqceSdQ3dM?generation=1557716357835456\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJzzgyJU--woARcZqceSdQ3dM?generation=1557845375613050\u0026alt=media",
         "rating": 4.6
     },
     {
@@ -79,7 +79,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJaRbaXjy5woARERNJSyktTog",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJaRbaXjy5woARERNJSyktTog?generation=1557716359069399\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJaRbaXjy5woARERNJSyktTog?generation=1557845377127648\u0026alt=media",
         "rating": 4.7
     },
     {
@@ -95,7 +95,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJdZbSPDg23YAR6yR-akC2g4E",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJdZbSPDg23YAR6yR-akC2g4E?generation=1557716360400512\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJdZbSPDg23YAR6yR-akC2g4E?generation=1557845378842840\u0026alt=media",
         "rating": 4.7
     },
     {
@@ -112,7 +112,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJXaYsEk3GwoARvx7RKBUE8Zg",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJXaYsEk3GwoARvx7RKBUE8Zg?generation=1557716361681957\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJXaYsEk3GwoARvx7RKBUE8Zg?generation=1557845380368273\u0026alt=media",
         "rating": 4.6
     },
     {
@@ -128,7 +128,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJkyrqXbjHwoAR1bJ76zx89B8",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJkyrqXbjHwoAR1bJ76zx89B8?generation=1557716363009006\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJkyrqXbjHwoAR1bJ76zx89B8?generation=1557845395105449\u0026alt=media",
         "rating": 4.7
     },
     {
@@ -144,7 +144,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJwwPTwi-5woARbtuI_49vkMM",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJwwPTwi-5woARbtuI_49vkMM?generation=1557716364738573\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJwwPTwi-5woARbtuI_49vkMM?generation=1557845397436575\u0026alt=media",
         "rating": 4.6
     },
     {
@@ -160,7 +160,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJ9590IY3AwoARquS6ie60MUc",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJ9590IY3AwoARquS6ie60MUc?generation=1557716365939156\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJ9590IY3AwoARquS6ie60MUc?generation=1557845398863929\u0026alt=media",
         "rating": 4.7
     },
     {
@@ -177,7 +177,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJsXqcyjy5woARNz6sOh0ZmwA",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJsXqcyjy5woARNz6sOh0ZmwA?generation=1557716367456214\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJsXqcyjy5woARNz6sOh0ZmwA?generation=1557845400538732\u0026alt=media",
         "rating": 4.6
     },
     {
@@ -192,7 +192,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJ0xG7n03GwoARsDH_OyyMcrM",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJ0xG7n03GwoARsDH_OyyMcrM?generation=1557716368812609\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJ0xG7n03GwoARsDH_OyyMcrM?generation=1557845402334794\u0026alt=media",
         "rating": 4.7
     },
     {
@@ -208,7 +208,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJ_yD1_SK5woARmWLyCit3znQ",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJ_yD1_SK5woARmWLyCit3znQ?generation=1557716370193163\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJ_yD1_SK5woARmWLyCit3znQ?generation=1557845404060681\u0026alt=media",
         "rating": 4.5
     },
     {
@@ -224,7 +224,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJhX1uVuC-woARQNzq4-b1Prk",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJhX1uVuC-woARQNzq4-b1Prk?generation=1557716371410078\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJhX1uVuC-woARQNzq4-b1Prk?generation=1557845405617893\u0026alt=media",
         "rating": 4.7
     },
     {
@@ -239,7 +239,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJiXJav6K6woARGPmX6Bsp55Y",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJiXJav6K6woARGPmX6Bsp55Y?generation=1557716372573825\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJiXJav6K6woARGPmX6Bsp55Y?generation=1557845407113818\u0026alt=media",
         "rating": 4.6
     },
     {
@@ -255,7 +255,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJXzARBf3HwoARJyT7uZSV-G4",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJXzARBf3HwoARJyT7uZSV-G4?generation=1557716374019228\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJXzARBf3HwoARJyT7uZSV-G4?generation=1557845409021816\u0026alt=media",
         "rating": 4.7
     },
     {
@@ -273,7 +273,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJS7ytYEHGwoARaSWuQfUXclI",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJS7ytYEHGwoARaSWuQfUXclI?generation=1557716375590540\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJS7ytYEHGwoARaSWuQfUXclI?generation=1557845410820299\u0026alt=media",
         "rating": 4.4
     },
     {
@@ -289,7 +289,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJlehVkOePwoARqzbpoXY0BSA",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJlehVkOePwoARqzbpoXY0BSA?generation=1557716376736814\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJlehVkOePwoARqzbpoXY0BSA?generation=1557845413092373\u0026alt=media",
         "rating": 4.9
     },
     {
@@ -304,7 +304,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJlaOcbiG_woARZMl0UJaNYAc",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJlaOcbiG_woARZMl0UJaNYAc?generation=1557716377872311\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJlaOcbiG_woARZMl0UJaNYAc?generation=1557845415325660\u0026alt=media",
         "rating": 4.5
     },
     {
@@ -320,7 +320,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJVVWVWVPOwoAR2DYSu7-_cks",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJVVWVWVPOwoAR2DYSu7-_cks?generation=1557716380557739\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJVVWVWVPOwoAR2DYSu7-_cks?generation=1557845416794335\u0026alt=media",
         "rating": 4.5
     },
     {
@@ -336,7 +336,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJdVYAVPnGwoAR3wmcg09VlJ4",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJdVYAVPnGwoAR3wmcg09VlJ4?generation=1557716382409667\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJdVYAVPnGwoAR3wmcg09VlJ4?generation=1557845418398474\u0026alt=media",
         "rating": 4.7
     },
     {
@@ -351,7 +351,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJfVpQRQq_woARQ5hwJsast6s",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJfVpQRQq_woARQ5hwJsast6s?generation=1557716383606532\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJfVpQRQq_woARQ5hwJsast6s?generation=1557845419773651\u0026alt=media",
         "rating": 4.5
     },
     {
@@ -366,7 +366,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJE9INgcGvwoARQ5ZcbJorwDI",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJE9INgcGvwoARQ5ZcbJorwDI?generation=1557716384951903\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJE9INgcGvwoARQ5ZcbJorwDI?generation=1557845421191223\u0026alt=media",
         "rating": 3.8
     },
     {
@@ -382,7 +382,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJdzBcVka-woARXKXAmSS8NW4",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJdzBcVka-woARXKXAmSS8NW4?generation=1557716386201901\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJdzBcVka-woARXKXAmSS8NW4?generation=1557845422559653\u0026alt=media",
         "rating": 4.6
     },
     {
@@ -398,7 +398,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJZQ9c8IW8woARN0gTXFiTqSU",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJZQ9c8IW8woARN0gTXFiTqSU?generation=1557716387825236\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJZQ9c8IW8woARN0gTXFiTqSU?generation=1557845424507689\u0026alt=media",
         "rating": 4.5
     },
     {
@@ -414,7 +414,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJ8WEBogu_woARkm3kmcbEiLc",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJ8WEBogu_woARkm3kmcbEiLc?generation=1557716389256621\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJ8WEBogu_woARkm3kmcbEiLc?generation=1557845426247177\u0026alt=media",
         "rating": 4.6
     },
     {
@@ -429,7 +429,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJAye4Ajm_woARztbwsoUDFug",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJAye4Ajm_woARztbwsoUDFug?generation=1557716390874063\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJAye4Ajm_woARztbwsoUDFug?generation=1557845428417196\u0026alt=media",
         "rating": 4.8
     },
     {
@@ -443,7 +443,7 @@ const locaitons = [
             "route"
         ],
         "place_id": "ChIJHzuO0b-6woARgRnwq-V1jJ4",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJHzuO0b-6woARgRnwq-V1jJ4?generation=1557716392151700\u0026alt=media"
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJHzuO0b-6woARgRnwq-V1jJ4?generation=1557845429832387\u0026alt=media"
     },
     {
         "location": {
@@ -456,7 +456,7 @@ const locaitons = [
             "route"
         ],
         "place_id": "ChIJWa5u50TGwoARxrEHn_jpCU0",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJWa5u50TGwoARxrEHn_jpCU0?generation=1557716393399394\u0026alt=media"
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJWa5u50TGwoARxrEHn_jpCU0?generation=1557845431138068\u0026alt=media"
     },
     {
         "location": {
@@ -470,7 +470,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJS8kiFbPHwoAR2U3en8iDAzI",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJS8kiFbPHwoAR2U3en8iDAzI?generation=1557716394609176\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJS8kiFbPHwoAR2U3en8iDAzI?generation=1557845432584823\u0026alt=media",
         "rating": 4.4
     },
     {
@@ -485,23 +485,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJBYuC8kvGwoAROxBTjwqfWpU",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJBYuC8kvGwoAROxBTjwqfWpU?generation=1557716395950781\u0026alt=media",
-        "rating": 4.5
-    },
-    {
-        "location": {
-            "lat": 34.0638079,
-            "lng": -118.3554338
-        },
-        "name": "The La Brea Tar Pits and Museum",
-        "formatted_address": "5801 Wilshire Blvd, Los Angeles, CA 90036",
-        "types": [
-            "museum",
-            "point_of_interest",
-            "establishment"
-        ],
-        "place_id": "ChIJ_yD1_SK5woARmWLyCit3znQ",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJ_yD1_SK5woARmWLyCit3znQ?generation=1557716396876708\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJBYuC8kvGwoAROxBTjwqfWpU?generation=1557845434058782\u0026alt=media",
         "rating": 4.5
     },
     {
@@ -518,24 +502,8 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJJau-OvA1joARa--mUqCZAho",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJJau-OvA1joARa--mUqCZAho?generation=1557716398222155\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJJau-OvA1joARa--mUqCZAho?generation=1557845435581508\u0026alt=media",
         "rating": 4.6
-    },
-    {
-        "location": {
-            "lat": 34.1052437,
-            "lng": -118.3489574
-        },
-        "name": "Runyon Canyon Park",
-        "formatted_address": "2000 N Fuller Ave, Los Angeles, CA 90046",
-        "types": [
-            "park",
-            "point_of_interest",
-            "establishment"
-        ],
-        "place_id": "ChIJhX1uVuC-woARQNzq4-b1Prk",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJhX1uVuC-woARQNzq4-b1Prk?generation=1557716399169101\u0026alt=media",
-        "rating": 4.7
     },
     {
         "location": {
@@ -550,7 +518,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJpRYFBmi8woARvb77AyPa-ug",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJpRYFBmi8woARvb77AyPa-ug?generation=1557716400578827\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJpRYFBmi8woARvb77AyPa-ug?generation=1557845437172567\u0026alt=media",
         "rating": 4.9
     },
     {
@@ -565,7 +533,7 @@ const locaitons = [
             "political"
         ],
         "place_id": "ChIJnSRZhCy5woAR3nFAvlZuRDA",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJnSRZhCy5woAR3nFAvlZuRDA?generation=1557716402175410\u0026alt=media"
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJnSRZhCy5woAR3nFAvlZuRDA?generation=1557845438645323\u0026alt=media"
     },
     {
         "location": {
@@ -579,23 +547,8 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJhVM_84-5woARE5DdsM9XJBo",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJhVM_84-5woARE5DdsM9XJBo?generation=1557716403356714\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJhVM_84-5woARE5DdsM9XJBo?generation=1557845440190633\u0026alt=media",
         "rating": 5
-    },
-    {
-        "location": {
-            "lat": 33.9835027,
-            "lng": -118.4676805
-        },
-        "name": "Venice Canals",
-        "formatted_address": "Venice, CA 90292",
-        "types": [
-            "point_of_interest",
-            "establishment"
-        ],
-        "place_id": "ChIJiXJav6K6woARGPmX6Bsp55Y",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJiXJav6K6woARGPmX6Bsp55Y?generation=1557716404308368\u0026alt=media",
-        "rating": 4.6
     },
     {
         "location": {
@@ -611,7 +564,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJOalD_5DbwoARcH4Yl2C8xjE",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJOalD_5DbwoARcH4Yl2C8xjE?generation=1557716405607679\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJOalD_5DbwoARcH4Yl2C8xjE?generation=1557845442119554\u0026alt=media",
         "rating": 4.7
     },
     {
@@ -627,7 +580,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJzVW61ga8woARcyvYoRq-MW8",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJzVW61ga8woARcyvYoRq-MW8?generation=1557716406921464\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJzVW61ga8woARcyvYoRq-MW8?generation=1557845444093785\u0026alt=media",
         "rating": 4.6
     },
     {
@@ -642,7 +595,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJ43XjCKG-woARu964Gey0l6k",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJ43XjCKG-woARu964Gey0l6k?generation=1557716408227990\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJ43XjCKG-woARu964Gey0l6k?generation=1557845445597834\u0026alt=media",
         "rating": 3.9
     },
     {
@@ -657,7 +610,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJm6bVH27CwoARlkQoGj43lCg",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJm6bVH27CwoARlkQoGj43lCg?generation=1557716409431717\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJm6bVH27CwoARlkQoGj43lCg?generation=1557845447014874\u0026alt=media",
         "rating": 4.7
     },
     {
@@ -674,7 +627,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJZ9ZE6cC_woARSvoAjIvQygc",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJZ9ZE6cC_woARSvoAjIvQygc?generation=1557716410707249\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJZ9ZE6cC_woARSvoAjIvQygc?generation=1557845448547350\u0026alt=media",
         "rating": 4.6
     },
     {
@@ -688,7 +641,7 @@ const locaitons = [
             "route"
         ],
         "place_id": "ChIJcVonKDDdwoARJhQBo7pj4fk",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJcVonKDDdwoARJhQBo7pj4fk?generation=1557716411779645\u0026alt=media"
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJcVonKDDdwoARJhQBo7pj4fk?generation=1557845449712798\u0026alt=media"
     },
     {
         "location": {
@@ -703,7 +656,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJkRS5KKTDwoARL78qHMf9T0w",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJkRS5KKTDwoARL78qHMf9T0w?generation=1557716413046424\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJkRS5KKTDwoARL78qHMf9T0w?generation=1557845451193686\u0026alt=media",
         "rating": 4.4
     },
     {
@@ -719,7 +672,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJldB7Af_AwoAR9JS8bg2d5EY",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJldB7Af_AwoAR9JS8bg2d5EY?generation=1557716414206886\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJldB7Af_AwoAR9JS8bg2d5EY?generation=1557845452701917\u0026alt=media",
         "rating": 4.5
     },
     {
@@ -735,23 +688,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJvQVOIiM9kIARXxWdp7a2w2o",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJvQVOIiM9kIARXxWdp7a2w2o?generation=1557716415569540\u0026alt=media",
-        "rating": 4.7
-    },
-    {
-        "location": {
-            "lat": 34.0169567,
-            "lng": -118.2887703
-        },
-        "name": "Natural History Museum of Los Angeles County (NHM)",
-        "formatted_address": "900 W Exposition Blvd, Los Angeles, CA 90007",
-        "types": [
-            "museum",
-            "point_of_interest",
-            "establishment"
-        ],
-        "place_id": "ChIJXzARBf3HwoARJyT7uZSV-G4",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJXzARBf3HwoARJyT7uZSV-G4?generation=1557716416489093\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJvQVOIiM9kIARXxWdp7a2w2o?generation=1557845454567237\u0026alt=media",
         "rating": 4.7
     },
     {
@@ -767,7 +704,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJHX8obL6-woARCr1gSVRm9lE",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJHX8obL6-woARCr1gSVRm9lE?generation=1557716417635649\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJHX8obL6-woARCr1gSVRm9lE?generation=1557845455920101\u0026alt=media",
         "rating": 3
     },
     {
@@ -782,57 +719,8 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJvdTr0cy_woARdZbccV-_4YI",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJvdTr0cy_woARdZbccV-_4YI?generation=1557716418867454\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJvdTr0cy_woARdZbccV-_4YI?generation=1557845457962612\u0026alt=media",
         "rating": 4.8
-    },
-    {
-        "location": {
-            "lat": 34.056219,
-            "lng": -118.2365021
-        },
-        "name": "Union Station",
-        "formatted_address": "800 N Alameda St, Los Angeles, CA 90012",
-        "types": [
-            "transit_station",
-            "train_station",
-            "bus_station",
-            "point_of_interest",
-            "establishment"
-        ],
-        "place_id": "ChIJS7ytYEHGwoARaSWuQfUXclI",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJS7ytYEHGwoARaSWuQfUXclI?generation=1557716419803796\u0026alt=media",
-        "rating": 4.4
-    },
-    {
-        "location": {
-            "lat": 34.3073793,
-            "lng": -118.4639652
-        },
-        "name": "Nethercutt Museum",
-        "formatted_address": "15151 Bledsoe St, Sylmar, CA 91342",
-        "types": [
-            "museum",
-            "point_of_interest",
-            "establishment"
-        ],
-        "place_id": "ChIJlehVkOePwoARqzbpoXY0BSA",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJlehVkOePwoARqzbpoXY0BSA?generation=1557716420708227\u0026alt=media",
-        "rating": 4.9
-    },
-    {
-        "location": {
-            "lat": 34.1017225,
-            "lng": -118.3415065
-        },
-        "name": "Madame Tussauds Hollywood",
-        "formatted_address": "6933 Hollywood Blvd, Hollywood, CA 90028",
-        "types": [
-            "point_of_interest",
-            "establishment"
-        ],
-        "place_id": "ChIJlaOcbiG_woARZMl0UJaNYAc",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJlaOcbiG_woARZMl0UJaNYAc?generation=1557716421580958\u0026alt=media",
-        "rating": 4.5
     },
     {
         "location": {
@@ -846,54 +734,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJoZN9JQq8woARujnnG5GuBP4",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJoZN9JQq8woARujnnG5GuBP4?generation=1557716422890074\u0026alt=media",
-        "rating": 4.5
-    },
-    {
-        "location": {
-            "lat": 34.0059656,
-            "lng": -118.1525136
-        },
-        "name": "Citadel Outlets",
-        "formatted_address": "100 Citadel Dr, Commerce, CA 90040",
-        "types": [
-            "shopping_mall",
-            "point_of_interest",
-            "establishment"
-        ],
-        "place_id": "ChIJVVWVWVPOwoAR2DYSu7-_cks",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJVVWVWVPOwoAR2DYSu7-_cks?generation=1557716423780662\u0026alt=media",
-        "rating": 4.5
-    },
-    {
-        "location": {
-            "lat": 34.073851,
-            "lng": -118.2399583
-        },
-        "name": "Dodger Stadium",
-        "formatted_address": "1000 Vin Scully Ave, Los Angeles, CA 90012",
-        "types": [
-            "stadium",
-            "point_of_interest",
-            "establishment"
-        ],
-        "place_id": "ChIJdVYAVPnGwoAR3wmcg09VlJ4",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJdVYAVPnGwoAR3wmcg09VlJ4?generation=1557716424705200\u0026alt=media",
-        "rating": 4.7
-    },
-    {
-        "location": {
-            "lat": 34.1341151,
-            "lng": -118.3215482
-        },
-        "name": "Hollywood Sign",
-        "formatted_address": "Los Angeles, CA 90068",
-        "types": [
-            "point_of_interest",
-            "establishment"
-        ],
-        "place_id": "ChIJfVpQRQq_woARQ5hwJsast6s",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJfVpQRQq_woARQ5hwJsast6s?generation=1557716425592055\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJoZN9JQq8woARujnnG5GuBP4?generation=1557845459519914\u0026alt=media",
         "rating": 4.5
     },
     {
@@ -909,23 +750,8 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJ63RkoOO7woAROtjuLuSSaKY",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJ63RkoOO7woAROtjuLuSSaKY?generation=1557716426838275\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJ63RkoOO7woAROtjuLuSSaKY?generation=1557845466163021\u0026alt=media",
         "rating": 4.6
-    },
-    {
-        "location": {
-            "lat": 33.938889,
-            "lng": -118.504167
-        },
-        "name": "Santa Monica Bay",
-        "formatted_address": "Santa Monica Bay, Los Angeles, CA",
-        "types": [
-            "natural_feature",
-            "establishment"
-        ],
-        "place_id": "ChIJE9INgcGvwoARQ5ZcbJorwDI",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJE9INgcGvwoARQ5ZcbJorwDI?generation=1557716427741653\u0026alt=media",
-        "rating": 3.8
     },
     {
         "location": {
@@ -941,7 +767,7 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJdx8P927DwoARjvYi0q5WAx8",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJdx8P927DwoARjvYi0q5WAx8?generation=1557716429178562\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJdx8P927DwoARjvYi0q5WAx8?generation=1557845467672545\u0026alt=media",
         "rating": 4.6
     },
     {
@@ -960,15 +786,24 @@ const locaitons = [
             "establishment"
         ],
         "place_id": "ChIJc1xhAk3bwoARBBlfKQzXKLM",
-        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJc1xhAk3bwoARBBlfKQzXKLM?generation=1557716430560460\u0026alt=media",
+        "photos": "https://www.googleapis.com/download/storage/v1/b/poi-image/o/ChIJc1xhAk3bwoARBBlfKQzXKLM?generation=1557845469179936\u0026alt=media",
         "rating": 4.7
     }
 ];
 
 export const UPDATE_LOCATIONS = 'update_locations';
-export const updateLocations = () => ({
-    type: UPDATE_LOCATIONS,
-    locations: locaitons
-});
 
+export const updateLocationsByGeo = (location) => (dispatch) => {
+    dispatch({
+        type: UPDATE_LOCATIONS,
+        locations: locaitons
+    })
+};
 
+export const updateLocationsByPlaces = (places) => (dispatch) => {
+    console.log(places);
+    dispatch({
+        type: UPDATE_LOCATIONS,
+        locations: locaitons
+    })
+};
