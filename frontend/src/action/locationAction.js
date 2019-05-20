@@ -807,3 +807,9 @@ export const updateLocationsByPlaces = (places) => (dispatch) => {
         locations: locaitons
     })
 };
+
+export const SET_CUR_TAB = 'set_cur_tab';
+export const setCurTab = val => ({
+    type: SET_CUR_TAB,
+    val
+});

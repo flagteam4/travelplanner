@@ -7,13 +7,14 @@ import SearchTab from "./component/Tabs/SearchTab";
 import TripPlannerTab from "./component/Tabs/TripPlannerTab";
 import * as geolocator from "geolocator";
 import * as PropTypes from "prop-types";
-import {updateCenter, updateLocationsByGeo} from "./action/locationAction";
+import {setCurTab, updateCenter, updateLocationsByGeo} from "./action/locationAction";
 import {connect} from "react-redux";
-import {fireApp} from "./config/Fire";
 import {changeUser} from "./action/authAction";
 import LoginButton from "./component/Auth/LoginButton";
 import {Grid} from "@material-ui/core";
 import LoginDialog from "./component/Auth/LoginDialog";
+import {firebaseApp} from "./config/Fire";
+import SavedTripTab from "./component/Tabs/SavedTripTab";
 
 
 function TabContainer(props) {
@@ -25,10 +26,6 @@ function TabContainer(props) {
 }
 
 class App extends React.Component {
-    state = {
-        value: 0,
-    };
-
     constructor(props) {
         super(props);
         //get user current geolocation
@@ -59,12 +56,12 @@ class App extends React.Component {
     }
 
     handleChange = (event, value) => {
-        this.setState({value});
+        this.props.setCurTab(value);
     };
 
 
     authListener = () => {
-        fireApp.auth().onAuthStateChanged((user) => {
+        firebaseApp.auth().onAuthStateChanged((user) => {
             //console.log(user);
             if (user) {
                 this.props.changeUser(user);
@@ -75,14 +72,14 @@ class App extends React.Component {
     };
 
     render() {
-        const {value} = this.state;
+        const {curTab} = this.props;
 
         return (
             <div>
                 <AppBar position="static">
                     <Grid container alignItems='center' justify='space-between'>
                         <Grid item xs={8}>
-                            <Tabs value={value} onChange={this.handleChange}>
+                            <Tabs value={curTab} onChange={this.handleChange}>
                                 <Tab label="Search Tab"/>
                                 <Tab label="Trip Planner Tab"/>
                                 <Tab label="Saved Trip Tab"/>
@@ -93,9 +90,9 @@ class App extends React.Component {
                         </Grid>
                     </Grid>
                 </AppBar>
-                {value === 0 && <TabContainer><SearchTab/></TabContainer>}
-                {value === 1 && <TabContainer><TripPlannerTab/></TabContainer>}
-                {value === 2 && <TabContainer>Item Three</TabContainer>}
+                {curTab === 0 && <TabContainer><SearchTab/></TabContainer>}
+                {curTab === 1 && <TabContainer><TripPlannerTab/></TabContainer>}
+                {curTab === 2 && <TabContainer><SavedTripTab/></TabContainer>}
                 <LoginDialog/>
             </div>
         );
@@ -106,17 +103,21 @@ SearchTab.propTypes = {
     updateCenter: PropTypes.func,
     updateLocationsByGeo: PropTypes.func,
     user: PropTypes.object,
-    changeUser: PropTypes.func
+    changeUser: PropTypes.func,
+    curTab: PropTypes.number,
+    setCurTab: PropTypes.func
 };
 
 const mapStateToProps = (state) => ({
-    user: state.authReducer.user
+    user: state.authReducer.user,
+    curTab: state.locationReducer.curTab
 });
 
 const mapDispatchToProps = (dispatch) => ({
     updateLocationsByGeo: (location) => updateLocationsByGeo(location)(dispatch),
     updateCenter: (center) => dispatch(updateCenter(center)),
-    changeUser: (user) => dispatch(changeUser(user))
+    changeUser: (user) => dispatch(changeUser(user)),
+    setCurTab: (val) => dispatch(setCurTab(val))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

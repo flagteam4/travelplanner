@@ -3,12 +3,12 @@ import * as PropTypes from 'prop-types'
 import {connect} from "react-redux";
 import {Button, Typography} from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
-import {fireApp} from "../../config/Fire";
 import {setLoginDialogStatus} from "../../action/authAction";
+import * as firebase from "firebase";
 
 class LoginButton extends React.Component {
-    logout = ()=>{
-        fireApp.auth().signOut();
+    logout = () => {
+        firebase.auth().signOut();
     };
 
     render() {
@@ -45,8 +45,8 @@ const mapStateTopProps = state => ({
     user: state.authReducer.user
 });
 
-const mapDispatchToProps = dispatch=>({
-    openLoginDialog: ()=>dispatch(setLoginDialogStatus(true))
+const mapDispatchToProps = dispatch => ({
+    openLoginDialog: () => dispatch(setLoginDialogStatus(true))
 });
 
 export default connect(mapStateTopProps, mapDispatchToProps)(LoginButton);

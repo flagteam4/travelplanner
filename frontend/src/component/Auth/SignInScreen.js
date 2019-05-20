@@ -1,10 +1,11 @@
 import React from 'react';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
-import firebase from 'firebase';
 import * as firebaseui from "firebaseui";
 import * as PropTypes from "prop-types";
 import {setLoginDialogStatus} from "../../action/authAction";
 import {connect} from "react-redux";
+import {firebaseApp} from "../../config/Fire";
+import * as firebase from "firebase";
 
 class SignInScreen extends React.Component {
     constructor(props) {
@@ -30,7 +31,7 @@ class SignInScreen extends React.Component {
     render() {
         return (
             <div>
-                <StyledFirebaseAuth uiConfig={this.uiConfig} firebaseAuth={firebase.auth()}/>
+                <StyledFirebaseAuth uiConfig={this.uiConfig} firebaseAuth={firebaseApp.auth()}/>
             </div>
         );
     }

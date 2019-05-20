@@ -14,7 +14,7 @@ const WrappedContainer = compose(
     }),
     withScriptjs
 )(props =>
-    <Grid container>
+    <Grid container spacing={8}>
         {props.children}
     </Grid>
 );

@@ -1,10 +1,11 @@
-import {MOVE_LOCATION, TOGGLE_LOCATION, UPDATE_CENTER, UPDATE_LOCATIONS} from "../action/locationAction";
+import {MOVE_LOCATION, SET_CUR_TAB, TOGGLE_LOCATION, UPDATE_CENTER, UPDATE_LOCATIONS} from "../action/locationAction";
 import arrayMove from 'array-move';
 
 export const locationReducer = (state = {
     center: {lat: 0, lng: 0},
     locations: [],
-    chosenLocations: []
+    chosenLocations: [],
+    curTab: 0
 }, action) => {
     switch (action.type) {
         case TOGGLE_LOCATION:
@@ -41,6 +42,11 @@ export const locationReducer = (state = {
                     rating: location.rating,
                     place_id: location.place_id
                 }))
+            };
+        case SET_CUR_TAB:
+            return {
+                ...state,
+                curTab: action.val
             };
         default:
             return state;
