@@ -75,25 +75,37 @@ class TripPlannerTab extends React.Component {
                         <MyDirectionRender locations={this.props.locations}/>
                     </WrappedMap>
                 </Grid>
-                <Dialog open={this.state.open} onClose={this.handleClose}>
-                    <DialogContent>
-                        <TextField
-                            autoFocus
-                            id='name'
-                            fullWidth
-                            label='Name of Trip Plan'
-                            onChange={this.handleChange}
-                        />
-                    </DialogContent>
-                    <DialogActions>
-                        <Button onClick={this.handleClose} color="primary">
-                            Cancel
-                        </Button>
-                        <Button onClick={this.handleClickConfirm} color="primary">
-                            Confirm
-                        </Button>
-                    </DialogActions>
-                </Dialog>
+                {this.props.user ?
+                    <Dialog open={this.state.open} onClose={this.handleClose}>
+                        <DialogContent>
+                            <TextField
+                                autoFocus
+                                id='name'
+                                fullWidth
+                                label='Name of Trip Plan'
+                                onChange={this.handleChange}
+                            />
+                        </DialogContent>
+                        <DialogActions>
+                            <Button onClick={this.handleClose} color="primary">
+                                Cancel
+                            </Button>
+                            <Button onClick={this.handleClickConfirm} color="primary">
+                                Confirm
+                            </Button>
+                        </DialogActions>
+                    </Dialog>:
+                    <Dialog open={this.state.open} onClose={this.handleClose}>
+                        <DialogContent>
+                            You need to login before saving!
+                        </DialogContent>
+                        <DialogActions>
+                            <Button onClick={this.handleClose} color='primary'>
+                                Confirm
+                            </Button>
+                        </DialogActions>
+                    </Dialog>
+                }
             </WrappedContainer>
         );
     }
