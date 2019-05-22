@@ -797,7 +797,6 @@ export const LOAD_LOCATIONS = 'load_locations';
 export const UPDATE_LOCATIONS = 'update_locations';
 export const updateLocationsByGeo = (location) => (dispatch) => {
     dispatch({type: LOAD_LOCATIONS});
-    //todo: location is func
     fetch(`http://35.239.88.90:9600/geo?lat=${location.lat}&lng=${location.lng}`)
         .then(res => res.json())
         .then(data => {
