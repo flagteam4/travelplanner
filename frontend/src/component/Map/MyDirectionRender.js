@@ -2,7 +2,6 @@
 import React from "react";
 import {DirectionsRenderer} from "react-google-maps";
 import PropTypes from "prop-types";
-import {connect} from "react-redux";
 
 class MyDirectionRender extends React.Component {
     constructor(props) {
@@ -10,7 +9,7 @@ class MyDirectionRender extends React.Component {
         this.DirectionsService = new google.maps.DirectionsService();
         this.state = {
             directions: null
-        }
+        };
         this.updateDirections(this.props.locations);
     }
 
@@ -23,7 +22,7 @@ class MyDirectionRender extends React.Component {
         this.updateDirections(locations);
     }
 
-    updateDirections = (locations)=>{
+    updateDirections = (locations) => {
         if (locations.length < 2) {
             this.setState({
                 directions: null
@@ -65,11 +64,7 @@ class MyDirectionRender extends React.Component {
 }
 
 MyDirectionRender.propTypes = {
-    locations: PropTypes.arrayOf(PropTypes.object)
+    locations: PropTypes.arrayOf(PropTypes.object).isRequired
 };
 
-const mapStateToProps = (state) => ({
-    locations: state.locationReducer.chosenLocations
-});
-
-export default connect(mapStateToProps, null)(MyDirectionRender);
+export default MyDirectionRender;

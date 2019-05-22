@@ -15,6 +15,7 @@ import {Grid} from "@material-ui/core";
 import LoginDialog from "./component/Auth/LoginDialog";
 import {firebaseApp} from "./config/Fire";
 import SavedTripTab from "./component/Tabs/SavedTripTab";
+import banner from './asset/images/Trip Planner.png';
 
 
 function TabContainer(props) {
@@ -76,7 +77,11 @@ class App extends React.Component {
 
         return (
             <div>
-                <AppBar position="static">
+                <img src={banner} style={{
+                    width: '100%',
+                    height: '200px'
+                }}/>
+                <AppBar position="static" style={{marginTop: '-4px'}}>
                     <Grid container alignItems='center' justify='space-between'>
                         <Grid item xs={8}>
                             <Tabs value={curTab} onChange={this.handleChange}>

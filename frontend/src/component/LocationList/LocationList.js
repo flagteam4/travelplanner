@@ -3,7 +3,8 @@ import * as PropTypes from "prop-types";
 import List from "@material-ui/core/List";
 import LocationItem from "./LocationItem";
 import {connect} from "react-redux";
-import {withStyles} from "@material-ui/core";
+import {CircularProgress, withStyles} from "@material-ui/core";
+import Grid from "@material-ui/core/Grid";
 
 const locationItemStyle = {
     selected: {
@@ -19,9 +20,16 @@ class LocationList extends React.Component {
         let count = 0;
         return (
             <List component='div' disablePadding style={{maxHeight: '100%', overflow: 'auto', height: '90vh'}}>
-                {this.props.locations.map(location =>
-                    <StyledLocationItem location={location} key={count++}/>
-                )}
+                {this.props.isLoadingLocations ?
+                    <Grid container justify='center' alignItems='center' style={{marginTop: '10px'}}>
+                        <Grid item>
+                            <CircularProgress/>
+                        </Grid>
+                    </Grid>
+                    :
+                    this.props.locations.map(location =>
+                        <StyledLocationItem location={location} key={count++}/>
+                    )}
             </List>
         )
     }
@@ -29,10 +37,12 @@ class LocationList extends React.Component {
 
 LocationList.propTypes = {
     locations: PropTypes.arrayOf(PropTypes.object),
+    isLoadingLocations: PropTypes.bool
 };
 
 const mapStateToProps = (state) => ({
-    locations: state.locationReducer.locations
+    locations: state.locationReducer.locations,
+    isLoadingLocations: state.locationReducer.isLoadingLocations
 });
 
 export default connect(mapStateToProps, null)(

@@ -9,6 +9,22 @@ import Stepper from "@material-ui/core/Stepper";
 import Step from "@material-ui/core/Step";
 import DeleteIcon from '@material-ui/icons/Delete';
 import withStyles from "@material-ui/core/styles/withStyles";
+import {WrappedMap} from "../Map/WrappedMap";
+import MyDirectionRender from "../Map/MyDirectionRender";
+import {compose, withProps} from "recompose";
+import {withScriptjs} from "react-google-maps";
+
+const WrappedContainer = compose(
+    withProps({
+        googleMapURL: `https://maps.googleapis.com/maps/api/js?v=3.exp&key=${process.env.REACT_APP_GOOGLE_API_KEY}&libraries=geometry,drawing,places`,
+        loadingElement: <div style={{height: `100%`}}/>,
+    }),
+    withScriptjs
+)(props =>
+    <div>
+        {props.children}
+    </div>
+);
 
 const styles = theme => ({
     rightIcon: {
@@ -45,7 +61,7 @@ class SavedTripTab extends React.Component {
     render() {
         const {classes} = this.props;
         return (
-            <div>
+            <WrappedContainer>
                 {this.state.plans.map((plan, index) =>
                     <ExpansionPanel key={index}>
                         <ExpansionPanelSummary expandIcon={<ExpandMoreIcon/>}>
@@ -66,17 +82,26 @@ class SavedTripTab extends React.Component {
                             </Grid>
                         </ExpansionPanelSummary>
                         <ExpansionPanelDetails>
-                            <Stepper orientation='vertical'>
-                                {plan.locations.map((location, index) =>
-                                    <Step key={index}>
-                                        <StepLabel>{location.title}</StepLabel>
-                                    </Step>
-                                )}
-                            </Stepper>
+                            <Grid container alignItems='center'>
+                                <Grid item xs={3}>
+                                    <Stepper orientation='vertical'>
+                                        {plan.locations.map((location, index) =>
+                                            <Step key={index}>
+                                                <StepLabel>{location.title}</StepLabel>
+                                            </Step>
+                                        )}
+                                    </Stepper>
+                                </Grid>
+                                <Grid item xs={9} style={{height: '100%'}}>
+                                        <WrappedMap zoom={4}>
+                                            <MyDirectionRender locations={plan.locations}/>
+                                        </WrappedMap>
+                                </Grid>
+                            </Grid>
                         </ExpansionPanelDetails>
                     </ExpansionPanel>
                 )}
-            </div>
+            </WrappedContainer>
         )
     }
 }

@@ -5,8 +5,23 @@ import LocationItem from "./LocationItem";
 import List from "@material-ui/core/List";
 import {connect} from "react-redux";
 import {moveLocation} from "../../action/locationAction";
+import Avatar from "@material-ui/core/Avatar";
+import Grid from "@material-ui/core/Grid";
 
-const SortableItem = SortableElement(({location}) => <LocationItem location={location}/>);
+const ALPHABET = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+
+
+const SortableItem = SortableElement(
+    ({location, index}) =>
+        <Grid container alignItems='center'>
+            <Grid item xs={1}>
+                <Avatar style={{backgroundColor: 'red'}}>{ALPHABET[index]}</Avatar>
+            </Grid>
+            <Grid item xs={11}>
+                <LocationItem location={location}/>
+            </Grid>
+        </Grid>
+);
 SortableItem.propTypes = {
     location: PropTypes.object.isRequired
 };

@@ -27,7 +27,7 @@ class MySearchBox extends React.Component {
             const newCenter = geometry.location.toJSON();
             this.props.updateCenter(newCenter);
             if (places[0].types.includes('political')){
-                this.props.updateLocationsByGeo(geometry);
+                this.props.updateLocationsByGeo(newCenter);
             } else {
                 let placeIds = [];
                 places.forEach(place=>{

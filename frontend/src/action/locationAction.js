@@ -1,3 +1,5 @@
+import fetch from 'cross-fetch';
+
 export const TOGGLE_LOCATION = 'toggle_location';
 export const toggleLocation = (title) => ({
     type: TOGGLE_LOCATION,
@@ -791,21 +793,43 @@ const locaitons = [
     }
 ];
 
+export const LOAD_LOCATIONS = 'load_locations';
 export const UPDATE_LOCATIONS = 'update_locations';
-
 export const updateLocationsByGeo = (location) => (dispatch) => {
-    dispatch({
-        type: UPDATE_LOCATIONS,
-        locations: locaitons
+    dispatch({type: LOAD_LOCATIONS});
+    //todo: location is func
+    fetch(`http://35.239.88.90:9600/geo?lat=${location.lat}&lng=${location.lng}`)
+        .then(res => res.json())
+        .then(data => {
+            dispatch({
+                type: UPDATE_LOCATIONS,
+                locations: data
+            });
+        }).catch(err => {
+        console.error(err);
+        dispatch({
+            type: UPDATE_LOCATIONS,
+            locations: locaitons
+        });
     })
 };
-
 export const updateLocationsByPlaces = (places) => (dispatch) => {
-    console.log(places);
-    dispatch({
-        type: UPDATE_LOCATIONS,
-        locations: locaitons
-    })
+    dispatch({type: LOAD_LOCATIONS});
+    let city = [];
+    places.forEach(place => city.push({'placeid': place}));
+    fetch('http://35.239.88.90:9600/place', {
+        method: "POST",
+        body: JSON.stringify({city}),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }).then(res => res.json())
+        .then(data => {
+            dispatch({
+                type: UPDATE_LOCATIONS,
+                locations: data
+            });
+        }).catch(err => console.error(err))
 };
 
 export const SET_CUR_TAB = 'set_cur_tab';

@@ -58,11 +58,21 @@ class TripPlannerTab extends React.Component {
                     >
                         click here to Save Trip Plan
                     </Button>
+                    <Button fullWidth variant='contained'
+                            onClick={() => this.props.setCurTab(0)}
+                            style={{
+                                color: "white",
+                                backgroundColor: "#1e90ff",
+                                marginTop: '5px'
+                            }}
+                    >
+                        change mind, click here to go back!
+                    </Button>
                     <ChosenLocationList/>
                 </Grid>
                 <Grid item xs={8}>
                     <WrappedMap zoom={12}>
-                        <MyDirectionRender/>
+                        <MyDirectionRender locations={this.props.locations}/>
                     </WrappedMap>
                 </Grid>
                 <Dialog open={this.state.open} onClose={this.handleClose}>
