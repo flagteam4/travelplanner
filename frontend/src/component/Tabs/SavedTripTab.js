@@ -13,6 +13,7 @@ import {WrappedMap} from "../Map/WrappedMap";
 import MyDirectionRender from "../Map/MyDirectionRender";
 import {compose, withProps} from "recompose";
 import {withScriptjs} from "react-google-maps";
+import {setLoginDialogStatus} from "../../action/authAction";
 
 const WrappedContainer = compose(
     withProps({
@@ -42,7 +43,15 @@ class SavedTripTab extends React.Component {
     };
 
     componentWillMount() {
+        if (!this.props.user)
+            this.props.openLoginDialog();
+        else
         this.readTripPlan(this.props.user.uid);
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if (this.props.user !== prevProps.user && this.props.user)
+            this.readTripPlan(this.props.user.uid)
     }
 
     readTripPlan = (userName) => {
@@ -93,9 +102,9 @@ class SavedTripTab extends React.Component {
                                     </Stepper>
                                 </Grid>
                                 <Grid item xs={9} style={{height: '100%'}}>
-                                        <WrappedMap zoom={4}>
-                                            <MyDirectionRender locations={plan.locations}/>
-                                        </WrappedMap>
+                                    <WrappedMap zoom={4}>
+                                        <MyDirectionRender locations={plan.locations}/>
+                                    </WrappedMap>
                                 </Grid>
                             </Grid>
                         </ExpansionPanelDetails>
@@ -108,6 +117,7 @@ class SavedTripTab extends React.Component {
 
 SavedTripTab.propTypes = {
     user: PropTypes.object,
+    openLoginDialog: PropTypes.func,
     classes: PropTypes.object.isRequired
 };
 
@@ -115,7 +125,11 @@ const mapStateToProps = state => ({
     user: state.authReducer.user
 });
 
-export default connect(mapStateToProps, null)(
+const mapDispatchToProps = (dispatch) => ({
+    openLoginDialog: () => dispatch(setLoginDialogStatus(true))
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(
     withStyles(styles)(SavedTripTab)
 )
 

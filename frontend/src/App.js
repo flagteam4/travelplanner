@@ -77,7 +77,7 @@ class App extends React.Component {
 
         return (
             <div>
-                <img src={banner} style={{
+                <img alt='trip planner title' src={banner} style={{
                     width: '100%',
                     height: '200px'
                 }}/>

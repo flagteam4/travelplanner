@@ -4,7 +4,7 @@ import {
     SET_CUR_TAB,
     TOGGLE_LOCATION,
     UPDATE_CENTER,
-    UPDATE_LOCATIONS
+    UPDATE_LOCATIONS, UPDATE_ROUTE
 } from "../action/locationAction";
 import arrayMove from 'array-move';
 
@@ -63,6 +63,20 @@ export const locationReducer = (state = {
                     place_id: location.place_id
                 })),
                 isLoadingLocations: false
+            };
+        case UPDATE_ROUTE:
+            return {
+                ...state,
+                chosenLocations: action.locations.map(location => ({
+                    title: location.name,
+                    chosen: false,
+                    lat: location.location.lat,
+                    lng: location.location.lng,
+                    formatted_address: location.formatted_address,
+                    photos: decodeURIComponent(location.photos),
+                    rating: location.rating,
+                    place_id: location.place_id
+                }))
             };
         case SET_CUR_TAB:
             return {

@@ -1,13 +1,11 @@
 import React from "react";
-import {CircularProgress, Grid} from "@material-ui/core";
+import {Grid} from "@material-ui/core";
 import LocationList from "../LocationList/LocationList";
 import {WrappedMap} from "../Map/WrappedMap";
 import Markers from "../Map/Markers";
 import {compose, withProps} from "recompose";
 import {withScriptjs} from "react-google-maps";
 import MySearchBox from "../Map/MySearchBox";
-import PropTypes from "prop-types";
-import {connect} from "react-redux";
 
 const WrappedContainer = compose(
     withProps({

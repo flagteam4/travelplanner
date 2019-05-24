@@ -9,7 +9,7 @@ import * as PropTypes from "prop-types";
 import {connect} from "react-redux";
 import {saveTripPlan} from "../../tripPlanStorage";
 import TextField from "@material-ui/core/es/TextField/TextField";
-import {setCurTab} from "../../action/locationAction";
+import {getRoute, setCurTab} from "../../action/locationAction";
 
 const WrappedContainer = compose(
     withProps({
@@ -52,22 +52,33 @@ class TripPlannerTab extends React.Component {
         return (
             <WrappedContainer>
                 <Grid item xs={4}>
-                    <Button color='secondary'
-                            fullWidth variant='contained'
-                            onClick={this.handleClickOpen}
-                    >
-                        click here to Save Trip Plan
-                    </Button>
-                    <Button fullWidth variant='contained'
-                            onClick={() => this.props.setCurTab(0)}
+                    <Grid container alignItems='center' justify='space-between' spacing={8}>
+                        <Grid item xs={6}>
+                            <Button color='secondary'
+                                    fullWidth variant='contained'
+                                    onClick={this.handleClickOpen}
+                            >
+                                click here to Save Trip Plan
+                            </Button>
+                        </Grid>
+                        <Grid item xs={6}>
+                            <Button fullWidth variant='contained'
+                                    onClick={() => this.props.setCurTab(0)}
+                                    style={{
+                                        color: "white",
+                                        backgroundColor: "#1e90ff",
+                                    }}
+                            >
+                                change mind, click here to go back!
+                            </Button>
+                        </Grid>
+                    </Grid>
+                    <Button color='primary' fullWidth variant='contained'
+                            onClick={() => this.props.getRoute(this.props.locations)}
                             style={{
-                                color: "white",
-                                backgroundColor: "#1e90ff",
-                                marginTop: '5px'
+                                marginTop: '4px'
                             }}
-                    >
-                        change mind, click here to go back!
-                    </Button>
+                    >GET RECOMMEND ROUTE</Button>
                     <ChosenLocationList/>
                 </Grid>
                 <Grid item xs={8}>
@@ -94,7 +105,7 @@ class TripPlannerTab extends React.Component {
                                 Confirm
                             </Button>
                         </DialogActions>
-                    </Dialog>:
+                    </Dialog> :
                     <Dialog open={this.state.open} onClose={this.handleClose}>
                         <DialogContent>
                             You need to login before saving!
@@ -114,7 +125,8 @@ class TripPlannerTab extends React.Component {
 TripPlannerTab.propTypes = {
     user: PropTypes.object,
     locations: PropTypes.arrayOf(PropTypes.object),
-    setCurTab: PropTypes.func
+    setCurTab: PropTypes.func,
+    getRoute: PropTypes.func
 };
 
 const mapStateToProps = state => ({
@@ -123,7 +135,8 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-    setCurTab: (val) => dispatch(setCurTab(val))
+    setCurTab: (val) => dispatch(setCurTab(val)),
+    getRoute: (locations) => dispatch(getRoute(locations))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(TripPlannerTab);

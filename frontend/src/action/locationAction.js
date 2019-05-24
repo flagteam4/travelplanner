@@ -797,7 +797,7 @@ export const LOAD_LOCATIONS = 'load_locations';
 export const UPDATE_LOCATIONS = 'update_locations';
 export const updateLocationsByGeo = (location) => (dispatch) => {
     dispatch({type: LOAD_LOCATIONS});
-    fetch(`http://35.239.88.90:9600/geo?lat=${location.lat}&lng=${location.lng}`)
+    fetch(`${process.env.REACT_APP_SERVER_ADDRESS}/geo?lat=${location.lat}&lng=${location.lng}`)
         .then(res => res.json())
         .then(data => {
             dispatch({
@@ -816,7 +816,7 @@ export const updateLocationsByPlaces = (places) => (dispatch) => {
     dispatch({type: LOAD_LOCATIONS});
     let city = [];
     places.forEach(place => city.push({'placeid': place}));
-    fetch('http://35.239.88.90:9600/place', {
+    fetch(`${process.env.REACT_APP_SERVER_ADDRESS}/place`, {
         method: "POST",
         body: JSON.stringify({city}),
         headers: {
@@ -829,6 +829,33 @@ export const updateLocationsByPlaces = (places) => (dispatch) => {
                 locations: data
             });
         }).catch(err => console.error(err))
+};
+
+export const UPDATE_ROUTE = 'update_route';
+export const getRoute = (locations) => (dispatch) => {
+  fetch(`${process.env.REACT_APP_SERVER_ADDRESS}/route`, {
+      method: 'POST',
+      body: JSON.stringify(locations.map(location=>({
+              name: location.title,
+              location: {
+                  lat: location.lat,
+                  lng: location.lng
+              },
+              formatted_address: location.formatted_address,
+              photos: location.photos,
+              rating: location.rating,
+              place_id: location.place_id
+          }))),
+      headers: {
+          'Content-Type': 'application/json'
+      }
+  }).then(res=>res.json())
+      .then(data=>{
+          dispatch({
+              type: UPDATE_ROUTE,
+              locations: data
+          })
+      }).catch(err=>console.error(err))
 };
 
 export const SET_CUR_TAB = 'set_cur_tab';
